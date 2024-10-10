@@ -1,0 +1,11 @@
+replicaCount: 1
+
+nginx:
+  service:
+    type: ClusterIP
+    port: 80
+  image:
+    registry: docker.io
+    repository: bitnami/nginx
+    tag: "1.19.0"
+    pullPolicy: IfNotPresent
